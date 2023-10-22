@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class AnimalFarm {
-	
+int	a =0;
 	/***********  SOUND ***************
 	 * Some computers are unable to play sounds. 
 	 * If you cannot play sound on this computer, set canPlaySounds to false.
@@ -24,13 +24,14 @@ public class AnimalFarm {
 	}
 	
 	void animals() {
-
+		while ( a >5) {
+       String animal = JOptionPane.showInputDialog("What animal do you want?");
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
-		*/			 
+		
 			
 		/* 2. Make it so that the user can keep entering new animals. */
-
+		}
 	}
 
 	void moo() {
