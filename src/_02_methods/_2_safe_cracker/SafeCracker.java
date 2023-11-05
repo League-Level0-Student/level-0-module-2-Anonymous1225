@@ -30,7 +30,7 @@ public class SafeCracker {
 		 * combinations
 		 */		
 int count = 0;
-while(count <10000000) {
+while(count >0) {
 	count ++;
 	tryCode(count);
 }
@@ -39,7 +39,16 @@ while(count <10000000) {
 	 void tryCode(int guess) {
 		System.out.println("trying " + guess);
 
-		int secretCode = 999999 - wekncrzpasfdkjhcfjse;
+		int secretCode = 2147483647;
+				
+	
+				
+				
+				
+				
+				
+				
+				
 
 		if (guess == secretCode) {
 			JOptionPane.showMessageDialog(null, "Congratulations! You cracked the safe with " + guess);
