@@ -7,8 +7,11 @@ void setup(){
      size(500,500);
      
      // Call the makeIceCreamCone() method below to draw the cone for your ice cream
-
-     // Use the addScoop method below to add as many scoops of ice cream as you want
+makeIceCreamCone(); 
+  addScoop("CookiesAndCream");
+addScoop("Chocolate");
+addScoop("Vanilla");
+// Use the addScoop method below to add as many scoops of ice cream as you want
      // Choose a different flavor for each scoop
 
      // Use the method provided to add some sprinkles to your ice cream
@@ -27,8 +30,8 @@ int coneY = 320;
 
 void makeIceCreamCone(){
      //noStroke();
-     fill(188,126,49);
-     triangle(190,320,310,300,255,500);
+     fill(188,132,49);
+     triangle(190,320,310,320,250,500);
 }
 
 
@@ -37,8 +40,12 @@ void addScoop(String flavor){
      if(flavor.equalsIgnoreCase("chocolate")){
          fill(116,71,16);
      }
-     else if(flavor.equalsIgnoreCase("Strawberry")){
-         fill( 232 ,144,129);
+     else if(flavor.equalsIgnoreCase("CookiesAndCream")){
+
+       fill(235, 233, 217);
+
+
+
      }
      else if(flavor.equalsIgnoreCase("Vanilla")){
          fill(245, 243, 227);
@@ -46,14 +53,16 @@ void addScoop(String flavor){
          println("ERROR: We don't have the flavor "+ flavor); 
          return;
      }
+     addSprinkle(100);
      ellipse(width/2,coneY - 50 - (SCOOPSIZE*scoops)/2,SCOOPSIZE,SCOOPSIZE);
+if(flavor.equals("CookiesAndCream"))
      scoops++;
 }
 
 
 void addSprinkle(int numberOfSprinkles){
     for(int i = 0; i < numberOfSprinkles; i++){
-         fill(random(256),random(256),random(256));
+         fill(random(250),random(255),random(250));
          int minX = width/2-SCOOPSIZE/2 + 10;
          int maxX = SCOOPSIZE/3 +width/2 +10;
          int minY = coneY-((SCOOPSIZE)*scoops)/2-40;

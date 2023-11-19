@@ -31,6 +31,7 @@ public class SafeCracker {
 		 */		
 int count = 0;
 while(count >0) {
+
 	count ++;
 	tryCode(count);
 }
