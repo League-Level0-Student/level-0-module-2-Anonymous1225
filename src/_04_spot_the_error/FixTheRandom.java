@@ -14,18 +14,16 @@ public class FixTheRandom {
 		
 		int numnber = random.nextInt(5);
 		
-		if (numnber == 5) {
-			System.out.println("FIVE");
-		} else if (numnber == 6) {
-			System.out.println("SIX");
-		} else if (numnber == 7) {
-			System.out.println("SEVEN");
-		} else if (numnber == 8) {
-			System.out.println("EIGHT");
-		} else if (numnber == 9) {
-			System.out.println("NINE");
-		} else if (numnber == 10) {
-			System.out.println("TEN");
+		if (numnber == 4) {
+			System.out.println("FOUR");
+		} else if (numnber == 3) {
+			System.out.println("THREE");
+		} else if (numnber == 2) {
+			System.out.println("TWO");
+		} else if (numnber == 1) {
+			System.out.println("ONE");
+		} else if (numnber == 0) {
+			System.out.println("ZERO");
 		}
 	}
 	
