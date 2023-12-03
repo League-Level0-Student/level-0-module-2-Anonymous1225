@@ -11,13 +11,25 @@ public class SoundtrackToLife {
 		// 1. Adjust this pop-up to find out what mood the user is in.
 		int userMood = JOptionPane.showOptionDialog(null, "The question", "Pop-up Title", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Mood1", "Mood2", "Mood3" }, null);
-		
+		System.out.println(userMood);
 		// 2. Their answer is stored in the userMood variable. Print it out.
 
 		// 3. If they are in a stressed mood, use the playVideo method to play a calming song from YouTube.
-		
+		String youTubeLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+		String babyShark = "https://www.youtube.com/watch?v=XqZsoesa55w&vl=en";
+		int oh = 0;
+ if (userMood==0) {
+		while (oh==0) {
+		playVideo(youTubeLink);
+		}
 
-		
+ }
+ if (userMood==1) {
+		while (oh==0) {
+		playVideo(babyShark);
+		}
+ }
+ 
 		// 4. Play different songs for other moods.
 
 /**
@@ -31,15 +43,20 @@ public class SoundtrackToLife {
 
 	}
 
-	static void playVideo(String youTubeLink) {
+static void playVideo(String youTubeLink) {
+
 		try {
+
 			URI uri = new URI(youTubeLink);
 			java.awt.Desktop.getDesktop().browse(uri);
+			JOptionPane.showMessageDialog(null, "Get rickrolled LOLOLOLOLOLOLOLOL");
 		} catch (Exception e) {
 			e.printStackTrace();
+
 		}
 	}
 }
+
 
 
 
