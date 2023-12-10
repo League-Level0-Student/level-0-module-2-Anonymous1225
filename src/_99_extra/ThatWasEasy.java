@@ -25,7 +25,7 @@ public class ThatWasEasy extends MouseAdapter {
         showEasyButton();
         easyButtonImage.addMouseListener(this);
     }
-
+    
     JLabel easyButtonImage;
 
     private void showEasyButton() {
@@ -39,5 +39,3 @@ public class ThatWasEasy extends MouseAdapter {
         quizWindow.pack();
     }
 }
-
-

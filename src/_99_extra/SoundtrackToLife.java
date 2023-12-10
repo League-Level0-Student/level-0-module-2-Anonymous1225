@@ -17,6 +17,7 @@ public class SoundtrackToLife {
 		// 3. If they are in a stressed mood, use the playVideo method to play a calming song from YouTube.
 		String youTubeLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 		String babyShark = "https://www.youtube.com/watch?v=XqZsoesa55w&vl=en";
+		String nyancat = "https://www.youtube.com/watch?v=2yJgwwDcgV8";
 		int oh = 0;
  if (userMood==0) {
 		while (oh==0) {
@@ -29,6 +30,11 @@ public class SoundtrackToLife {
 		playVideo(babyShark);
 		}
  }
+ if (userMood==2) {
+		while (oh==0) {
+		playVideo(nyancat);
+		}
+} 
  
 		// 4. Play different songs for other moods.
 
@@ -46,10 +52,9 @@ public class SoundtrackToLife {
 static void playVideo(String youTubeLink) {
 
 		try {
-
+			JOptionPane.showMessageDialog(null, "Get rickrolled LOLOLOLOLOLOLOLOL");
 			URI uri = new URI(youTubeLink);
 			java.awt.Desktop.getDesktop().browse(uri);
-			JOptionPane.showMessageDialog(null, "Get rickrolled LOLOLOLOLOLOLOLOL");
 		} catch (Exception e) {
 			e.printStackTrace();
 
